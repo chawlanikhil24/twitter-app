@@ -30,6 +30,8 @@ def fetchTweets(hashtag,count):
     try:
         t = Twitter(auth=OAuth(oauth_token,oauth_token_secret,CONSUMER_KEY,CONSUMER_SECRET))
         Tweets = t.search.tweets(q = hashtag)
+        if len(Tweets["statuses"]) == 0:
+            print "No Tweets for this hashtag"
         for item in Tweets["statuses"]:
             if item["retweet_count"] >= count:
                 print item["text"]
@@ -41,6 +43,9 @@ def main():
     try:
         hashtag = "#"+str(sys.argv[1])
         count = int(sys.argv[2])
+        if count < 0:
+            print "Retweet counts cannot be negative."
+            sys.exit()
     except IndexError:
         print "Syntax: python twi.py <hashtag> <retweet_count>"
         print "Example: python twi.py custserv 1"
