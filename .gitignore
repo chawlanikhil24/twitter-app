@@ -1,0 +1,5 @@
+#No python interpreted Bytecodes
+*.pyc
+
+#No virtual-environment
+venv
