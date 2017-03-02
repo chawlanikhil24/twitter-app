@@ -2,7 +2,7 @@ The app uses Twitter API to fetch tweets from Twitter. The tweets can be filtere
 
 **HOW TO USE THIS APP:**
 
-The very first thing you be requiring is Twitter Access tokens and secrets.
+The very first thing you will be requiring is Twitter Access tokens and secrets.
 Go to this [link](https://apps.twitter.com/) and create your app.
 
 When your app is created,then: 
@@ -10,8 +10,6 @@ When your app is created,then:
  - Click on "Keys and Access Tokens"
  - Create your OAuth tokens and secrets
 
- 
-in **"config.sample.ini"** to the corresponding Keys and **rename the "config.sample.ini"  to  "config.ini"** .
 
 Before running this app you must ensure that you have 
 python2.7.x ,
