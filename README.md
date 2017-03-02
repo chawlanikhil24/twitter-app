@@ -10,12 +10,6 @@ When your app is created,then:
  - Click on "Keys and Access Tokens"
  - Create your OAuth tokens and secrets
 
-Copy:
-
- 1. Consumer Key (API Key)
- 2. Consumer Secret (API Secret)
- 3. Access Token
- 4. Access Token Secret
  
 in **"config.sample.ini"** to the corresponding Keys and **rename the "config.sample.ini"  to  "config.ini"** .
 
@@ -36,7 +30,14 @@ Steps to run the app:
  3. virtualenv venv
  4. source venv/bin/activate
  5. pip install -r req.txt
- 6. python twi.py "hashtag" "retweet-count" 
+ 6. Before running the app, Copy:
+        Copy the following stuff from your Twitter app dashboard
+        1. Consumer Key (API Key)
+        2. Consumer Secret (API Secret)
+        3. Access Token
+        4. Access Token Secret
+        and paste them in "config.sample.ini" and rename "config.sample.ini" to "config.ini"  
+ 7. python twi.py "hashtag" "retweet-count" 
 
 EXAMPLE: 
 
