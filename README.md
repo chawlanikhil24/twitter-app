@@ -30,7 +30,7 @@ Steps to run the app:
  3. virtualenv venv
  4. source venv/bin/activate
  5. pip install -r req.txt
- 6. Before running the app, Copy:
+ 6. Before running the app, Copy these from Twitter App Dashboard:
  
             1. Consumer Key (API Key)
             2. Consumer Secret (API Secret)
