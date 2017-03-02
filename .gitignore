@@ -3,3 +3,6 @@
 
 #No virtual-environment
 venv
+
+#No credentials
+config.ini
